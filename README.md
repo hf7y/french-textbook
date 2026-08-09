@@ -4,7 +4,7 @@ This repository contains the reviewed French grammar/textbook material and the b
 
 ## Teacher Dashboard
 
-Open the **[Teacher Dashboard](teacher/index.html)** on the published GitHub Pages site, or open `teacher/index.html` locally.
+Open the published **[Teacher Dashboard](https://hf7y.com/french-textbook/teacher/)**, or open [`teacher/index.html`](teacher/index.html) locally.
 
 The dashboard is intentionally simple. It is a teacher-facing layer over the GitHub repository, not a replacement for the textbook.
 
@@ -134,7 +134,7 @@ The current repository already separates important concerns:
 
 ```text
 sections/       human-facing textbook sections
- data/          indexed/reviewed textbook data
+data/           indexed/reviewed textbook data
 assets/         site assets
 scripts/        processing/build scripts
 index.html      textbook reader
