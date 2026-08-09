@@ -1,0 +1,25 @@
+name: Report a lesson correction
+description: Report a possible error in one reviewed textbook lesson.
+title: "Lesson correction: "
+labels: ["repair-lesson"]
+body:
+  - type: input
+    id: lesson
+    attributes:
+      label: Reviewed lesson file
+      description: The one affected normalized lesson under data/sections/.
+      placeholder: data/sections/01-adjectives.md
+    validations:
+      required: true
+  - type: textarea
+    id: correction
+    attributes:
+      label: What should be corrected?
+      description: Quote the current text, explain the correction, and cite a source if available.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Supporting evidence
+      description: Include a page image, reference, or explanation when the OCR source is unclear.
