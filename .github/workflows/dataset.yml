@@ -1,0 +1,26 @@
+name: Validate textbook dataset
+
+on:
+  pull_request:
+    paths:
+      - "data/**"
+      - "scripts/**"
+      - ".github/workflows/dataset.yml"
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
+      - "scripts/**"
+      - ".github/workflows/dataset.yml"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Validate normalized Markdown
+        run: python3 scripts/validate_dataset.py

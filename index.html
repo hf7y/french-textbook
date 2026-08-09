@@ -1,65 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<title>French Grammar Review Book</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-  body { font-family: system-ui, sans-serif; max-width: 40rem; margin: 2rem auto; padding: 0 1rem; line-height: 1.5; }
-  h1 { font-size: 1.6rem; }
-  ol { padding-left: 1.2rem; }
-  li { margin: 0.35rem 0; }
-  a { text-decoration: none; color: #1a5fb4; }
-  a:hover { text-decoration: underline; }
-</style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>French Grammar Review Book</title>
+  <link rel="stylesheet" href="assets/styles.css">
 </head>
 <body>
-  <h1>French Grammar Review Book</h1>
-  <p>One section per topic, in table-of-contents order.</p>
-  <ol>
-      <li><a href="sections/01-adjectives.md">Adjectives</a></li>
-      <li><a href="sections/02-adverbs.md">Adverbs</a></li>
-      <li><a href="sections/03-articles.md">Articles</a></li>
-      <li><a href="sections/04-c-est-vs-il-est.md">C’Est Vs. Il Est</a></li>
-      <li><a href="sections/05-comparative-and-superlative.md">Comparative and Superlative</a></li>
-      <li><a href="sections/06-conditional-present.md">Conditional (Present)</a></li>
-      <li><a href="sections/07-demonstrative-adjectives.md">Demonstrative Adjectives</a></li>
-      <li><a href="sections/08-devoir.md">Devoir</a></li>
-      <li><a href="sections/09-faire-causative-construction.md">Faire Causative Construction</a></li>
-      <li><a href="sections/10-future.md">Future</a></li>
-      <li><a href="sections/11-future-perfect.md">Future Perfect</a></li>
-      <li><a href="sections/12-idiomatic-expressions.md">Idiomatic Expressions</a></li>
-      <li><a href="sections/13-imperative.md">Imperative</a></li>
-      <li><a href="sections/14-imperfect.md">Imperfect</a></li>
-      <li><a href="sections/15-indirect-discourse.md">Indirect Discourse</a></li>
-      <li><a href="sections/16-infinitives-preceded-by-prepositions.md">Infinitives Preceded by Prepositions</a></li>
-      <li><a href="sections/17-interrogative-adjectives.md">Interrogative Adjectives</a></li>
-      <li><a href="sections/18-interrogative-pronouns.md">Interrogative Pronouns</a></li>
-      <li><a href="sections/19-jouer-a-jouer-de.md">Jouer à / Jouer de</a></li>
-      <li><a href="sections/20-jours-de-la-semaine.md">Jours de la Semaine</a></li>
-      <li><a href="sections/21-language-nationality.md">Language &amp; Nationality</a></li>
-      <li><a href="sections/22-literary-tenses.md">Literary Tenses</a></li>
-      <li><a href="sections/23-months-of-the-year.md">Months of the Year</a></li>
-      <li><a href="sections/24-negative-expressions.md">Negative Expressions</a></li>
-      <li><a href="sections/25-object-pronouns.md">Object Pronouns</a></li>
-      <li><a href="sections/26-ordinal-numbers.md">Ordinal Numbers</a></li>
-      <li><a href="sections/27-passe-compose.md">Passé Composé</a></li>
-      <li><a href="sections/28-passive-voice.md">Passive Voice</a></li>
-      <li><a href="sections/29-past-subjunctive.md">Past Subjunctive</a></li>
-      <li><a href="sections/30-pluperfect.md">Pluperfect</a></li>
-      <li><a href="sections/31-possessive-adjectives.md">Possessive Adjectives</a></li>
-      <li><a href="sections/32-prepositions-of-place.md">Prepositions of Place</a></li>
-      <li><a href="sections/33-prepositions-with-geographical-locations.md">Prepositions with Geographical Locations</a></li>
-      <li><a href="sections/34-present-participle.md">Present Participle</a></li>
-      <li><a href="sections/35-present-tense.md">Present Tense</a></li>
-      <li><a href="sections/36-quantitative-expressions.md">Quantitative Expressions</a></li>
-      <li><a href="sections/37-question-formation.md">Question Formation</a></li>
-      <li><a href="sections/38-reflexive-reciprocal-verbs.md">Reflexive / Reciprocal Verbs</a></li>
-      <li><a href="sections/39-relative-pronouns.md">Relative Pronouns</a></li>
-      <li><a href="sections/40-savoir-connaitre.md">Savoir &amp; Connaitre</a></li>
-      <li><a href="sections/41-seasons.md">Seasons</a></li>
-      <li><a href="sections/42-subject-pronouns.md">Subject Pronouns</a></li>
-      <li><a href="sections/43-subjunctive.md">Subjunctive</a></li>
-  </ol>
+  <header class="site-header">
+    <p class="eyebrow">Reviewed learning dataset</p>
+    <h1>French Grammar Review Book</h1>
+    <p>Lessons are transcribed from OCR sources and reviewed one section at a time.</p>
+  </header>
+
+  <main class="reader">
+    <nav aria-label="Lesson list">
+      <label for="lesson-filter">Find a lesson</label>
+      <input id="lesson-filter" type="search" placeholder="Search lessons">
+      <ol id="lesson-list"></ol>
+    </nav>
+    <article id="lesson" aria-live="polite">
+      <p>Select a reviewed lesson from the list.</p>
+    </article>
+  </main>
+
+  <script src="assets/reader.js"></script>
 </body>
 </html>
