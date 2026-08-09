@@ -4,8 +4,6 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
-  schedule:
-    - cron: '17 4 * * *'
 
 permissions:
   contents: read
@@ -20,24 +18,15 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Download published Google Doc
+      - uses: actions/checkout@v4
+
+      - name: Assemble site
         run: |
           mkdir -p site
-          curl -L --fail --silent --show-error \
-            'https://docs.google.com/document/d/e/2PACX-1vRVOW0pxe7g5BDTNBI-UTOEyNzZ4-rrSlifbIT_zt4uegTOZFrJuIGFhUhC6Fujkg/pub' \
-            -o site/index.html
+          cp index.html site/index.html
+          cp -r sections site/sections
           test -s site/index.html
-
-      - name: Add basic page metadata
-        run: |
-          python3 - <<'PY'
-          from pathlib import Path
-          p = Path('site/index.html')
-          s = p.read_text(encoding='utf-8', errors='replace')
-          if '<base ' not in s.lower():
-              s = s.replace('<head>', '<head><base href="https://docs.google.com/">', 1)
-          p.write_text(s, encoding='utf-8')
-          PY
+          test -d site/sections
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
