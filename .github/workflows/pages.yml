@@ -27,6 +27,7 @@ jobs:
           cp -r assets site/assets
           cp -r data site/data
           cp -r sections site/sections
+          cp -r teacher site/teacher
           python3 - <<'EOF'
           import json, os, re
           files = sorted(f for f in os.listdir("sections") if f.endswith(".md"))
@@ -41,6 +42,7 @@ jobs:
           test -s site/index.html
           test -f site/data/sections/index.json
           test -f site/sections/index.json
+          test -f site/teacher/index.html
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
