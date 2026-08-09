@@ -95,11 +95,14 @@
   }
 
   function buildIssueUrl(lesson) {
-    const title = encodeURIComponent(`OCR error in: ${lesson.title}`);
+    const title = encodeURIComponent(`Lesson correction: ${lesson.title}`);
     const body = encodeURIComponent(
-      `**Source file:** \`${lesson.path}\`\n\n**Describe the error:**\n\n<!-- Please describe what you found and where in the text. -->`
+      `**Reviewed lesson:** \`data/sections/${lesson.id}.md\`\n\n` +
+      `**OCR source:** \`${lesson.path}\`\n\n` +
+      `**Describe the correction:**\n\n` +
+      `<!-- Quote the text, explain the correction, and identify its location. -->`
     );
-    const labels = encodeURIComponent("ocr-error");
+    const labels = encodeURIComponent("repair-lesson");
     return `https://github.com/${REPO}/issues/new?title=${title}&body=${body}&labels=${labels}`;
   }
 
