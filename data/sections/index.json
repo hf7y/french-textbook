@@ -1,5 +1,11 @@
 [
   {
+    "id": "01-adjectives",
+    "title": "Adjectives",
+    "path": "data/sections/01-adjectives.md",
+    "source": "sections/01-adjectives.md"
+  },
+  {
     "id": "04-c-est-vs-il-est",
     "title": "C'est vs. Il est",
     "path": "data/sections/04-c-est-vs-il-est.md",
