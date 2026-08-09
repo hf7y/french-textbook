@@ -26,8 +26,21 @@ jobs:
           cp index.html site/index.html
           cp -r assets site/assets
           cp -r data site/data
+          cp -r sections site/sections
+          python3 - <<'EOF'
+          import json, os, re
+          files = sorted(f for f in os.listdir("sections") if f.endswith(".md"))
+          records = []
+          for f in files:
+              stem = f[:-3]
+              title = re.sub(r"^\d+-", "", stem).replace("-", " ").title()
+              records.append({"id": stem, "title": title, "path": f"sections/{f}"})
+          with open("site/sections/index.json", "w") as fh:
+              json.dump(records, fh, ensure_ascii=False, indent=2)
+          EOF
           test -s site/index.html
           test -f site/data/sections/index.json
+          test -f site/sections/index.json
 
       - name: Setup Pages
         uses: actions/configure-pages@v5
