@@ -40,7 +40,7 @@
 <main>
   <nav aria-label="Teacher tools">
     <a class="button" href="../index.html">📖 Textbook</a>
-    <a class="button" href="../README.md">📘 Manual</a>
+    <a class="button" href="https://github.com/hf7y/french-textbook/blob/main/README.md">📘 Manual</a>
     <a class="button" href="https://github.com/hf7y/french-textbook/issues">📝 Issues</a>
   </nav>
 
@@ -119,7 +119,7 @@
     $('today-summary').textContent = unit + ' · adaptive lesson prototype';
     const body = encodeURIComponent('Generate today\'s French lesson.\n\nCurrent textbook position: ' + unit + '\nToday\'s focus: ' + focus + '\nClass status: ' + $('status-select').selectedOptions[0].text + '\n\nUse the classroom workflow in the repository manual. Produce opening, short quiz, review game, new-topic presentation/notes, listening comprehension, activity, and exit assignment.');
     $('generate-link').href = 'https://github.com/hf7y/french-textbook/issues/new?title=' + encodeURIComponent('Generate lesson: ' + focus) + '&body=' + body;
-    const feedback = encodeURIComponent('Classroom evidence for: ' + focus + '\n\n' + ($('notes').value.trim() || 'Please record and interpret today\'s evidence.')); 
+    const feedback = encodeURIComponent('Classroom evidence for: ' + focus + '\n\n' + ($('notes').value.trim() || 'Please record and interpret today\'s evidence.'));
     $('feedback-link').href = 'https://github.com/hf7y/french-textbook/issues/new?title=' + encodeURIComponent('Classroom evidence: ' + focus) + '&body=' + feedback;
   }
   $('save').addEventListener('click', () => {
