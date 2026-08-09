@@ -71,7 +71,57 @@ th, td {
   text-align: left;
 }
 
-@media (max-width: 45rem) {
+.source-toggle {
+  display: flex;
+  gap: .4rem;
+  margin-bottom: .75rem;
+}
+
+.source-btn {
+  background: none;
+  border: 1px solid #9a9a9a;
+  border-radius: .25rem;
+  cursor: pointer;
+  flex: 1;
+  font-size: .85rem;
+  padding: .35rem .5rem;
+}
+
+.source-btn.active {
+  background: #1769aa;
+  border-color: #1769aa;
+  color: #fff;
+  font-weight: 700;
+}
+
+.lesson-toolbar {
+  display: flex;
+  gap: .75rem;
+  margin-bottom: 1.25rem;
+}
+
+.toolbar-btn {
+  border: 1px solid #9a9a9a;
+  border-radius: .25rem;
+  font-size: .85rem;
+  padding: .3rem .65rem;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.toolbar-btn:hover {
+  background: #f0f0f0;
+}
+
+.toolbar-btn--report {
+  border-color: #c0392b;
+  color: #c0392b;
+}
+
+.toolbar-btn--report:hover {
+  background: #fdf0ef;
+}
+
   body { padding: 1rem; }
   .reader { display: block; }
   nav {

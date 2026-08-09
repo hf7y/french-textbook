@@ -1,8 +1,14 @@
 (() => {
+  const REPO = "hf7y/french-textbook";
   const list = document.querySelector("#lesson-list");
   const article = document.querySelector("#lesson");
   const filter = document.querySelector("#lesson-filter");
+  const btnReviewed = document.querySelector("#btn-reviewed");
+  const btnSections = document.querySelector("#btn-sections");
+
   let lessons = [];
+  let sectionsData = [];
+  let mode = "reviewed"; // "reviewed" | "sections"
 
   const escape = (text) => text.replace(/[&<>"']/g, (character) => ({
     "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#039;"
@@ -70,9 +76,13 @@
     return output.join("\n");
   }
 
+  function currentLessons() {
+    return mode === "sections" ? sectionsData : lessons;
+  }
+
   function showLessons() {
     const query = filter.value.toLocaleLowerCase();
-    list.replaceChildren(...lessons
+    list.replaceChildren(...currentLessons()
       .filter((lesson) => lesson.title.toLocaleLowerCase().includes(query))
       .map((lesson) => {
         const item = document.createElement("li");
@@ -84,39 +94,95 @@
       }));
   }
 
+  function buildIssueUrl(lesson) {
+    const title = encodeURIComponent(`OCR error in: ${lesson.title}`);
+    const body = encodeURIComponent(
+      `**Source file:** \`${lesson.path}\`\n\n**Describe the error:**\n\n<!-- Please describe what you found and where in the text. -->`
+    );
+    const labels = encodeURIComponent("ocr-error");
+    return `https://github.com/${REPO}/issues/new?title=${title}&body=${body}&labels=${labels}`;
+  }
+
+  function buildToolbar(lesson) {
+    const toolbar = document.createElement("div");
+    toolbar.className = "lesson-toolbar";
+
+    const downloadLink = document.createElement("a");
+    downloadLink.href = lesson.path;
+    downloadLink.download = lesson.path.split("/").pop();
+    downloadLink.textContent = "⬇ Download .md";
+    downloadLink.className = "toolbar-btn";
+
+    const reportLink = document.createElement("a");
+    reportLink.href = buildIssueUrl(lesson);
+    reportLink.target = "_blank";
+    reportLink.rel = "noopener noreferrer";
+    reportLink.textContent = "⚠ Report an error";
+    reportLink.className = "toolbar-btn toolbar-btn--report";
+
+    toolbar.append(downloadLink, reportLink);
+    return toolbar;
+  }
+
   async function showLesson() {
     const id = location.hash.slice(1);
-    const lesson = lessons.find((entry) => entry.id === id);
+    const lesson = currentLessons().find((entry) => entry.id === id);
     document.querySelectorAll("#lesson-list a").forEach((link) =>
       link.toggleAttribute("aria-current", link.hash === location.hash)
     );
     if (!lesson) {
-      article.innerHTML = "<p>Select a reviewed lesson from the list.</p>";
+      article.innerHTML = "<p>Select a lesson from the list.</p>";
       return;
     }
     article.textContent = "Loading lesson...";
     try {
       const response = await fetch(lesson.path);
       if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      article.innerHTML = renderMarkdown(await response.text());
+      const content = await response.text();
+      article.innerHTML = "";
+      if (mode === "sections") {
+        article.append(buildToolbar(lesson));
+      }
+      const body = document.createElement("div");
+      body.innerHTML = renderMarkdown(content);
+      article.append(body);
     } catch (error) {
       article.textContent = `Unable to load this lesson (${error.message}).`;
     }
   }
 
+  function switchMode(newMode) {
+    mode = newMode;
+    const isReviewed = mode === "reviewed";
+    btnReviewed.classList.toggle("active", isReviewed);
+    btnReviewed.setAttribute("aria-pressed", String(isReviewed));
+    btnSections.classList.toggle("active", !isReviewed);
+    btnSections.setAttribute("aria-pressed", String(!isReviewed));
+    filter.value = "";
+    history.replaceState(null, "", " ");
+    showLessons();
+    showLesson();
+  }
+
+  btnReviewed.addEventListener("click", () => switchMode("reviewed"));
+  btnSections.addEventListener("click", () => switchMode("sections"));
   filter.addEventListener("input", showLessons);
   window.addEventListener("hashchange", showLesson);
-  fetch("data/sections/index.json")
-    .then((response) => {
-      if (!response.ok) throw new Error(`HTTP ${response.status}`);
-      return response.json();
-    })
-    .then((records) => {
-      lessons = records;
-      showLessons();
-      showLesson();
-    })
-    .catch((error) => {
-      article.textContent = `The lesson index could not be loaded (${error.message}).`;
+
+  function loadIndex(url) {
+    return fetch(url).then((r) => {
+      if (!r.ok) throw new Error(`HTTP ${r.status}`);
+      return r.json();
     });
+  }
+
+  loadIndex("data/sections/index.json")
+    .then((records) => { lessons = records; showLessons(); showLesson(); })
+    .catch((error) => {
+      article.textContent = `The reviewed lesson index could not be loaded (${error.message}).`;
+    });
+
+  loadIndex("sections/index.json")
+    .then((records) => { sectionsData = records; })
+    .catch(() => { /* sections not available in this environment */ });
 })();
