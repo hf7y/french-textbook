@@ -2,100 +2,96 @@
 
 **SUBJUNCTIVE**
 
-1. Formation  
-   
+1. Formation
 
-1\. ENDINGS-To form the subjunctive of regular verbs drop the –ENT ending of the 3rd person plural form of the present tense and add the following endings:  
-        
-                           Je → **\-e**             Nous → **\-ions**       
-                           Tu → **\-es**          Vous → **\-iez**   
-                           Il    →  e                  Ils→ ent  
-                           Elle → **\-e**           Elles → **\-ent**  
-                           On   → e     
+1. ENDINGS – To form the subjunctive of regular verbs drop the –ENT ending of the 3rd person plural form of the present tense and add the following endings:
 
-2\. IRREGULAR STEMS  
-                      
-a. The following verbs have two subjunctive stems: one for the      
-                nous and vous form and one for the remaining forms.
+Je → **-e**             Nous → **-ions**  
+Tu → **-es**           Vous → **-iez**  
+Il → **-e**             Ils → **-ent**  
+Elle → **-e**          Elles → **-ent**  
+On → **-e**
 
-                         NOUS/VOUS                                ALL OTHER FORMS  
-                         aller       all-                                                aill-  
-                         appeler   appel-                                        appell-  
-                         croire     croy-                                            croi-  
-                         devoir     dev-                                            doiv-  
-                         mourir     mour-                                       meur-  
-                         prendre    pren-                                        prenn-  
-                         recevoir   recev-                                       recoiv-  
-                         valoir       vai-                                           vaill-  
-                         venir      ven-                                           vienn-  
-                         voir          voy-                                          voi-  
-                         vouloir     voul-                                         veuill-  
-                      
-                    b. The following verbs have only one stem:
+2. IRREGULAR STEMS
 
-| faire  pouvoir savoir | fass- puiss- sach- |
+a. The following verbs have two subjunctive stems: one for the nous and vous forms and one for the remaining forms.
+
+NOUS/VOUS | ALL OTHER FORMS  
+aller all- | aill-  
+appeler appel- | appell-  
+croire croy- | croi-  
+devoir dev- | doiv-  
+mourir mour- | meur-  
+prendre pren- | prenn-  
+recevoir recev- | reçoiv-  
+valoir val- | vaill-  
+venir ven- | vienn-  
+voir voy- | voi-  
+vouloir voul- | veuill-
+
+b. The following verbs have only one stem:
+
+| faire pouvoir savoir | fass- puiss- sach- |
 | :---: | :---: |
-
-                         
 
 82
 
-c. The following verbs have irregular stems and endings: 
+c. The following verbs have irregular stems and endings:
 
-AVOIR- to have
+AVOIR – to have
 
 | j’aie | nous ayons |
 | :---- | :---- |
 | tu aies | vous ayez |
-| il  elle ait on | ils elles aient  |
+| il elle ait on | ils elles aient |
 
-ETRE- to be
+ÊTRE – to be
 
 | je sois | nous soyons |
 | :---- | :---- |
 | tu sois | vous soyez |
-| il  elle soit on | ils elles soient  |
+| il elle soit on | ils elles soient |
 
-B. USAGE of the Sunjunctive 
+B. USAGE of the Subjunctive
 
-83  
+83
 IMPERSONAL EXPRESSIONS
 
-| Il est – C’est \+ Ce n’est pas \+ Il suffit  Il vaut mieux  Il convient | bon triste étonnant (in)utile curieux bizarre étrange honteux  surprenant important mauvais merveilleux pénible (in)juste naturel regrettable rare normal dommage  la peine |  \+ QUE \+ QUE \+QUE |  \+ Subject \+Subject \+ Subject |  \+ Verb in Subjunctive \+ Verb in Subjunctive \+ Verb in Subjunctive |
+| Il est – C’est + Ce n’est pas + Il suffit Il vaut mieux Il convient | bon triste étonnant (in)utile curieux bizarre étrange honteux surprenant important mauvais merveilleux pénible (in)juste naturel regrettable rare normal dommage la peine | + QUE + QUE + QUE | + Subject + Subject + Subject | + Verb in Subjunctive + Verb in Subjunctive + Verb in Subjunctive |
 | :---- | :---- | :---- | :---- | :---- |
 
-DOUBT/ POSSIBILITIES/ UNCERTAINTY
+DOUBT / POSSIBILITIES / UNCERTAINTY
 
-| Douter Ne pas être sûr Ne pas être certain Ne pas penser Ne pas croire Ne pas espérer Penser Croire (Interrogative) Espérer  | \+ QUE \+QUE \+QUE | \+Subject \+Subject \+Subject | \+ Verb in Subjunctive \+ Verb in Subjunctive \+ Verb in Subjunctive |   |
+| Douter Ne pas être sûr Ne pas être certain Ne pas penser Ne pas croire Ne pas espérer Penser Croire (Interrogative) Espérer | + QUE + QUE + QUE | + Subject + Subject + Subject | + Verb in Subjunctive + Verb in Subjunctive + Verb in Subjunctive | |
 | :---- | :---- | :---- | :---- | ----- |
 
-84   
-IMPERSONAL EXPRESSIONS 
-
-| Il est \+ Il se peut Il semble  | douteux possible  |  \+ QUE |  \+ Subject |  \+Verb in Subjuntive  |
-| :---- | :---- | :---- | :---- | :---- |
-
-Wishes/ Desires 
-
-| aimer (bien) désirer exiger préférer souhaiter vouloir (bien)  |  \+ QUE |  \+ Subject |  \+ Verb in Subjunctive |
-| :---- | :---- | :---- | :---- |
-
-Necessity/ Obligation
-
-| Demander Insister pour Empêcher  |  \+QUE |  \+Subject |  \+ Verb in Subjunctive |  |
-| :---- | :---- | :---- | :---- | :---- |
-
-85  
+84
 IMPERSONAL EXPRESSIONS
 
-| Il est \+  Il faut absolument | nécessaire essential  |  \+QUE |  \+ Subject |  \+ Verb in Subjunctive |
+| Il est + Il se peut Il semble | douteux possible | + QUE | + Subject | + Verb in Subjunctive |
 | :---- | :---- | :---- | :---- | :---- |
 
-CNJUCTIONS THAT TAKE THE SUBJUNCTIVE
+Wishes / Desires
 
-| CONJUNCTION (+ subjunctive) | PREPOSITION (+infinitive) |
+| aimer (bien) désirer exiger préférer souhaiter vouloir (bien) | + QUE | + Subject | + Verb in Subjunctive |
+| :---- | :---- | :---- | :---- |
+
+Necessity / Obligation
+
+| Demander Insister pour Empêcher | + QUE | + Subject | + Verb in Subjunctive | |
+| :---- | :---- | :---- | :---- | :---- |
+
+85
+IMPERSONAL EXPRESSIONS
+
+| Il est + Il faut absolument | nécessaire essentiel | + QUE | + Subject | + Verb in Subjunctive |
+| :---- | :---- | :---- | :---- | :---- |
+
+CONJUNCTIONS THAT TAKE THE SUBJUNCTIVE
+
+| CONJUNCTION (+ subjunctive) | PREPOSITION (+ infinitive) |
 | ----- | ----- |
-|  à moins que (+ne)  sans que à condition que afin que pour que de peur que (+ne) de crante que (+ne) avant que (+ne) en attendant que jusqu à ce que  bien que quelque pourvu que unless without on the condition so that in order that for fear that fir fear that before waiting fore until although although provided that   | à moins de  sains  à condition de afin de pour  de peur de de crainte de avant de  en attendant de  \-- \-- \-- \-- |
+| à moins que (+ ne) sans que à condition que afin que pour que de peur que (+ ne) de crainte que (+ ne) avant que (+ ne) en attendant que jusqu’à ce que bien que quoique pourvu que unless without on the condition so that in order that for fear that for fear that before waiting for until although although provided that | à moins de sans à condition de afin de pour de peur de de crainte de avant de en attendant de -- -- -- -- |
 
 [image1]: <data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABsAAAALCAYAAACOAvbOAAAClUlEQVR4Xq2Ta0hTYRjHH0sy8QJFhIXLDxZkBQlREWgiaMa8FaGZWNmQQBJy3SUriizSjJaXGXYxrTlJTWRTRNTKLJ1taokWtAV20SxJs8xWnn/POTNjw76Ef/jxwvu+5/zO8z7vIZqBGPO3Ar0aCP0GwXFtxoPKcOhOBgAWHdDXgGGTdq3jHim99WqMWprx+WUT+hpVFnNDXul4n+HQ6LOy0MdKcnXcP11Q7A+UBaFcuQLoN0hV/uwsbHfcRx11N2GXiR/ABxPQzfP6eIgvGruyGC+OzULPEYLpAKElhVC3l1C1h1C+m1AST6jg8VIUISfWHfhiAUbMwGAHhh7lbJiSddZetZdBAD51Az23gZoE4NZqfFMtQvdhJ0lmVBKa9xH0SX9Fqi2ErEjCmc2EB+l+0KfKbEKR4Vewvm29I8m6avP/ISsGdDuAolUYveyFroMkyZ6mEh6yrFpBKNtFKIojZHNF5+WEU5sIKQEE3Vk5zIVylr2ekk4M9QySqabA3mUdAd61AB25QGUEhGvLMHxxAUxcUS/L2vcTmpJtR6jdSbixnZAZQTjHshOhhFKFJ/LjPCCUh2G8wBfjeT54c9qtTarMqFdzn6w2kfBLKhtmvlWtGdz0YFjVPhjKnC9VJFbWxrJGlt1LJGgSbLIL4TbZ8RBCWogzBE0gvud6YyxXhudHXbdN9cykTcPAk+t431qC++qkAU1GgiFbGX03bqMsi5cTmVgmiglmxGb7M37MEsaLmSceYxZXlx42B+JvIFRG4qvKu2tSYRfxgeXMOkbOiF8iCsQxjAli1jMrmaWMjFnIeDBzmdniBcmLYVF1DKANxEeV7xr6zzgxzow748m4MS6T81IqFC5AVTSE+uSJP3PT5TflUOGCz85zVgAAAABJRU5ErkJggg==>
 
