@@ -2,12 +2,14 @@
 
 **SEASONS**
 
-  Le Printemps (m)-Spring                          L’automne (m)-fall/autumn  
-  L’été (m)-Summer                                    L’hiver (m)-Winter
+Le printemps (m) — spring  
+L’été (m) — summer  
+L’automne (m) — fall/autumn  
+L’hiver (m) — winter
 
-                To say *in the* use: 
+To say *in the* use:
 
-                **Au** printemps                             **Au printemps** il faut du ski.  
-                **En** été                                         **En été** il fait très chaud.  
-                **En** automne                                **En automne** il fait frais.  
-                **En** hiver                                     **En hiver** il neige.
+**Au** printemps — **Au printemps** il {{?}} du ski.  
+**En** été — **En été** il fait très chaud.  
+**En** automne — **En automne** il fait frais.  
+**En** hiver — **En hiver** il neige.
