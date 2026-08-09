@@ -1,137 +1,131 @@
 # Passé Composé
 
-*   
-4. Formation 
+4. Formation
 
-Verbs conjugate with AVOIR- mose verbs whose auxiliary is AVOIR in the *passé composé* are transitive verbs (verbs that are capable of having direct objects). Direct objects can NOT be separated from the verb by a preposition. 
+1. Verbs conjugated with **AVOIR** — Most verbs whose auxiliary is **avoir** in the *passé composé* are transitive verbs (verbs that are capable of having direct objects). Direct objects cannot be separated from the verb by a preposition.
 
-| parler finir attendre avoir être faire pouvoir prendre vouloir  | 🡪 🡪 🡪 🡪 🡪 🡪 🡪 🡪 🡪  | parlé fini attendu eu été fait pu pris voulu |
-| :---- | :---- | :---- |
+| Infinitive | Past participle |
+| :---- | :---- |
+| parler | parlé |
+| finir | fini |
+| attendre | attendu |
+| avoir | eu |
+| être | été |
+| faire | fait |
+| pouvoir | pu |
+| prendre | pris |
+| vouloir | voulu |
 
-AFFIRMATIVE STATEMENT \= subject \+ auxiliary verb \+ past participle 
+**Affirmative statement** = subject + auxiliary verb + past participle
 
-NEGATIVE STATEMENT :
+**Negative statement** = subject + **ne** + auxiliary verb + **pas** + past participle
 
-Subject \+ 		\+ auxiliary verb \+ 			\+ past participle \+ 			
+**Inverted question** = subject noun + auxiliary verb + subject pronoun + past participle
 
-INVERTED QUESTION : 
+2. Verbs conjugated with **ÊTRE** — Most French verbs that cannot take direct objects use **être** as their auxiliary verb in the *passé composé*. If there is a noun that follows an **être** verb, it must be preceded by a preposition because it cannot be a direct object. The past participles of **être** verbs function as adjectives and agree in gender and number with the subject.
 
-noun subject \+ auxiliary verb \+ sunjecy pronoun \+  			\+ past participle \+ 		
+| Verb | Past participle |
+| :---- | :---- |
+| devenir | devenu |
+| revenir | revenu |
+| monter | monté |
+| rentrer | rentré |
+| sortir | sorti |
+| venir | venu |
+| arriver | arrivé |
+| naître | né |
+| descendre | descendu |
+| entrer | entré |
+| retourner | retourné |
+| tomber | tombé |
+| rester | resté |
+| aller | allé |
+| mourir | mort |
+| partir | parti |
 
-2\. Verbs Conjugated with ETRE\- most French verbs that cannot take direct objects use etre as their auxiliary verb in the passé compose. If there is a noun that follows an ETRE verb, it must be preceded by a preposition because D.O.s  The past participles of the etre verbs function as adjectives and agree in gender and number with the subject.
+Je suis ______(e)  
+Tu es ______(e)  
+Il est ______  
+Elle est ______e  
+Nous sommes ______(e)s  
+Vous êtes ______(e)(s)  
+Ils sont ______s  
+Elles sont ______es
 
-Devenir	(devenu)
+B. Reflexive verbs in the *passé composé*
 
-Revenir	 (revenue)
+**S’AMUSER** — to have fun / have a good time
 
-Monter 	(monte)
+Je me suis amusé(e)  
+Tu t’es amusé(e)  
+Il / on s’est amusé  
+Elle s’est amusée  
+Nous nous sommes amusé(e)s  
+Vous vous êtes amusé(e)(s)  
+Ils se sont amusés  
+Elles se sont amusées
 
-Rentrer 	(rentre)
+1. All reflexive verbs are conjugated with **être** in the *passé composé*, and the past participle agrees in gender and number with the reflexive pronoun / subject.
 
-Sortir 	             (sorti) 
+- Monique s’est couchée très tard hier soir.  
+  *Monique went to bed very late last night.*
 
-Venir      	(venu)
+2. The past participle of **se faire + infinitive** constructions, and those reflexive verbs followed by direct objects, will **not** agree with the reflexive pronoun / subject in the *passé composé*.
 
-Arriver 	(arrive)
+- Sophie s’est fait couper les cheveux.  
+  *Sophie had her hair cut.*
 
-Naitre  		   (ne)
+- Elles se sont brossé les dents avant de se coucher.  
+  *They brushed their teeth before going to bed.*
 
-Descendre 	   (descendu)
+3. In the negative, **ne** precedes the reflexive pronoun, as in the simple tenses. **Pas** or other negative words normally follow the auxiliary verb.
 
-Entrer 		 (entre)
+- Pierre ne s’est pas endormi devant la télé.  
+  *Pierre didn’t fall asleep in front of the TV.*
 
-Retourner 	     (retourne)
+4. When forming questions by inversion, the subject pronoun is inverted directly behind the auxiliary verb.
 
-Tomber 	(tombe)
+- Se sont-ils baignés à la plage ?  
+  *Did they go swimming at the beach?*
 
-Rester 		(reste)
+- Non, ils ne se sont pas baignés à la plage. Mais ils se sont fait bronzer.  
+  *No, they didn’t. They got a tan.*
 
-Aller 		(alle)
+C. Uses of *passé composé*
 
-Mourir 	(mort)
+1. The onset of the action is clearly seen, although the specific beginning point may not necessarily be stated.
 
-Partir 		(parti)
-
-53
-
-Je suis  \_\_\_\_\_(e)				Nous sommes \_\_\_\_\_\_\_\_\_(e)s  
-Tu es \_\_\_\_\_\_(e)				Vous etes \_\_\_\_\_\_\_\_\_\_\_(e) (s)  
-Il est \_\_\_\_\_\_\_					Ils sont \_\_\_\_\_\_\_\_\_\_\_s  
-Elle est \_\_\_\_\_\_\_e				Elles sont \_\_\_\_\_\_\_\_\_\_\_es
-
-B. Reflexive Verbs in the Passe Compose  
-                               
-S’AMUSER – to have fun / a good time
-
-    Je me suis amuse(e)			Nous nous sommes amuse(e)s  
-    Tu t’es amuse(e)			 	 Vous vous etes amuse(e)(s)			  
-    Il / on s’est amuse				Ils se sont amuses  
-    Elle s’est amuse				Elles se sont amuses
-
-1. All reflexive verbs are conjugated with etre in the passé compose and it’s past participle agrees in gender and in number with the reflexive pronoun / subject.  
-     
-   \-Monique s’est couchee tres tard hier soir.  
-   *Monique went to bed very late last night.*  
-     
-2. The past participle of SE FAIRE \+ infinitive constructions and those reflexive verbs followed by direct objects will NOT agree with its reflexive pronoun / subject in the passé compose.  
-     
-   \-Sophie s’est fait couper les cheveux.  
-   *Sophie had her hair cut.*  
-     
-   \-Elles se sont brosse les dents avant de se coucher.  
-   *They brush their teeth before going to bed*.
-
-3\. In the negative, ne precedes the reflexive pronoun, as in the simple tense. Pas or other negative words normally follow the auxiliary ver.
-
-\-Pierre ne s’est pas endormi devant la tele.  
-*Pierre didn’t fall asleep in front of the TV*.
-
-4\. When forming questions by inversion, the subject pronoun is inverted directly behind the auxiliary verb. 
-
-\-Se sont ils baignes a la plage?  
-*Did they go swimming at the beach?*
-
-\-Non, ils ne se sont pas baignes a la plage.  
-Mais ils se sont fait bronzer.  
-*No, they didn’t. They got a tan.*
-
-C. Uses of Passé  Composé  
-1\. Onset of the action is clearly seen, although the specific beginning point may not necessarily be stated. 
-
-Je suis alle au cinema cet après-midi a 3h.  
+Je suis allé au cinéma cet après-midi à 3 h.  
 *I went to the movies this afternoon (at 3 o’clock).*
 
-2\. The end of the action is clearly seen, although the specific time may not necessarily be stated.
+2. The end of the action is clearly seen, although the specific time may not necessarily be stated.
 
-(A 5h) j’ai quitte le cinema a la fin du film pour aller diner.  
+(À 5 h) j’ai quitté le cinéma à la fin du film pour aller dîner.  
 *(At 5:00) I left the movies at the end of the film to go have dinner.*
 
-55  
-3\. The duration of the action is clearly stated, even with the use of indefinite times expressions such as pendant quelques heures (for a few hours), plusieurs (several).
+3. The duration of the action is clearly stated, even with the use of indefinite time expressions such as **pendant quelques heures** (for a few hours), **plusieurs** (several).
 
-Le flim a dure deux heures et demie.  
-*The movie lasted two and a half hours.*  
+Le film a duré deux heures et demie.  
+*The movie lasted two and a half hours.*
 
-4\. An action that is repeated a SPECIFIED number of times.
+4. A past action that is repeated a specified number of times.
 
-La semaine passee, je suis alle au cinema quatre fois.  
-*Last week, I went to the movies four times.*  
+La semaine passée, je suis allé au cinéma quatre fois.  
+*Last week, I went to the movies four times.*
 
-5\. A past action is viewed in its entirety, although the beginning and end points and the duration are implied but not specifically stated.
+5. A past action is viewed in its entirety, although the beginning and end points and the duration are implied but not specifically stated.
 
-Viviane est allee au cinema aussi.  
-*Viviane went to the movies too.*  
-   
-6\. A reaction to or a sudden action may cause a change in an existing state or condition meaning to become or get and the following adverb may indicated that an action is completed within a given mount of time frame.
+Viviane est allée au cinéma aussi.  
+*Viviane went to the movies too.*
 
-Enfin		tout a coup		a ce moment  
-Finalement 	immediatement	une fois  
-Soudain 	tout de suite		vite
+6. A reaction to, or a sudden action, may cause a change in an existing state or condition, meaning *to become* or *get*; the following adverbs may indicate that an action is completed within a given time frame.
+
+Enfin — tout à coup — à ce moment  
+Finalement — immédiatement — une fois  
+Soudain — tout de suite — vite
 
 Quand j’ai vu l’examen, j’ai eu peur.  
 *When I saw the exam, I got scared.*
 
-Apres avoir mange la mauvaise viande, il a ete malade.  
+Après avoir mangé la mauvaise viande, il a été malade.  
 *After eating the spoiled meat, he got sick.*
-
-56
