@@ -1,0 +1,138 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>French Teacher Dashboard</title>
+  <style>
+    :root { color-scheme: light dark; font-family: system-ui, sans-serif; line-height: 1.5; }
+    body { margin: 0; background: Canvas; color: CanvasText; }
+    header, main { max-width: 72rem; margin: 0 auto; padding: 1.25rem; }
+    header { border-bottom: 1px solid color-mix(in srgb, CanvasText 20%, transparent); }
+    .eyebrow { font-size: .78rem; font-weight: 700; letter-spacing: .08em; text-transform: uppercase; margin: 0; opacity: .7; }
+    h1 { margin: .25rem 0; }
+    .subtle { opacity: .72; }
+    .grid { display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr)); }
+    .card { border: 1px solid color-mix(in srgb, CanvasText 20%, transparent); border-radius: .65rem; padding: 1rem; background: color-mix(in srgb, Canvas 96%, CanvasText 4%); }
+    .wide { grid-column: 1 / -1; }
+    .actions { display: flex; flex-wrap: wrap; gap: .5rem; margin-top: .75rem; }
+    button, .button { display: inline-block; border: 1px solid color-mix(in srgb, CanvasText 30%, transparent); border-radius: .45rem; padding: .55rem .8rem; background: ButtonFace; color: ButtonText; text-decoration: none; cursor: pointer; font: inherit; }
+    .primary { font-weight: 700; }
+    label { display: block; font-weight: 650; margin: .65rem 0 .25rem; }
+    input, select, textarea { box-sizing: border-box; width: 100%; padding: .55rem; border: 1px solid color-mix(in srgb, CanvasText 30%, transparent); border-radius: .4rem; background: Field; color: FieldText; font: inherit; }
+    textarea { min-height: 7rem; resize: vertical; }
+    .status { display: flex; align-items: center; justify-content: space-between; gap: .75rem; padding: .55rem 0; border-bottom: 1px solid color-mix(in srgb, CanvasText 12%, transparent); }
+    .status:last-child { border-bottom: 0; }
+    .dot { display: inline-block; width: .7rem; height: .7rem; border-radius: 50%; margin-right: .45rem; background: currentColor; }
+    .green { color: #238636; } .yellow { color: #9a6700; } .red { color: #cf222e; }
+    nav { display: flex; flex-wrap: wrap; gap: .5rem; margin: 0 0 1.25rem; }
+    nav a { color: inherit; }
+    code { padding: .1rem .25rem; border-radius: .25rem; background: color-mix(in srgb, CanvasText 8%, transparent); }
+    .small { font-size: .9rem; }
+  </style>
+</head>
+<body>
+<header>
+  <p class="eyebrow">French textbook · teacher tools</p>
+  <h1>Teacher Dashboard</h1>
+  <p class="subtle">A simple classroom control panel. The textbook remains in GitHub; this page is the teacher-facing layer.</p>
+</header>
+<main>
+  <nav aria-label="Teacher tools">
+    <a class="button" href="../index.html">📖 Textbook</a>
+    <a class="button" href="../README.md">📘 Manual</a>
+    <a class="button" href="https://github.com/hf7y/french-textbook/issues">📝 Issues</a>
+  </nav>
+
+  <section class="grid">
+    <article class="card wide">
+      <p class="eyebrow">Today</p>
+      <h2 id="today-title">Today's lesson</h2>
+      <p id="today-summary" class="subtle">Set the current lesson below. Future agent automation can replace this summary with a generated plan.</p>
+      <div class="actions">
+        <a class="button primary" id="generate-link" href="https://github.com/hf7y/french-textbook/issues/new">🤖 Ask agent to generate lesson</a>
+        <a class="button" href="https://github.com/hf7y/french-textbook/issues/new">➕ Add teaching note</a>
+      </div>
+    </article>
+
+    <article class="card">
+      <p class="eyebrow">Current position</p>
+      <label for="unit">Unit / section</label>
+      <input id="unit" placeholder="e.g. Unit 3 · daily routines">
+      <label for="focus">Today's focus</label>
+      <input id="focus" placeholder="e.g. reflexive verbs">
+      <label for="status-select">Class status</label>
+      <select id="status-select">
+        <option value="green">🟢 Students have it</option>
+        <option value="yellow">🟡 Mixed</option>
+        <option value="red">🔴 Students are struggling</option>
+      </select>
+      <button class="primary" id="save">Save classroom state</button>
+      <p id="saved" class="small subtle" aria-live="polite"></p>
+    </article>
+
+    <article class="card">
+      <p class="eyebrow">Today's sequence</p>
+      <ol>
+        <li>Opening: date, weather, greeting, warmup</li>
+        <li>Short-answer quiz — ≤15 min</li>
+        <li>Kahoot / review game</li>
+        <li>New topic + OneNote notes + listening</li>
+        <li>Communicative activity</li>
+        <li>Exit assignment</li>
+      </ol>
+      <p class="small subtle">The agent should adjust timing and review based on class evidence.</p>
+    </article>
+
+    <article class="card">
+      <p class="eyebrow">Class pulse</p>
+      <div class="status"><span><span class="dot green"></span>Vocabulary</span><strong>Good</strong></div>
+      <div class="status"><span><span class="dot yellow"></span>Grammar</span><strong>Mixed</strong></div>
+      <div class="status"><span><span class="dot red"></span>Listening</span><strong>Needs review</strong></div>
+      <p class="small subtle">Prototype values only. Later, quiz/Kahoot results can populate this automatically.</p>
+    </article>
+
+    <article class="card wide">
+      <p class="eyebrow">After class</p>
+      <label for="notes">What happened?</label>
+      <textarea id="notes" placeholder="Example: Students could recognize the forms but struggled to produce them. Information-gap activity worked well."></textarea>
+      <div class="actions">
+        <button id="save-notes" class="primary">Save local note</button>
+        <a class="button" id="feedback-link" href="https://github.com/hf7y/french-textbook/issues/new">📊 Send evidence to agent</a>
+      </div>
+      <p id="note-saved" class="small subtle" aria-live="polite"></p>
+    </article>
+  </section>
+</main>
+<script>
+  const $ = id => document.getElementById(id);
+  const state = JSON.parse(localStorage.getItem('frenchTeacherState') || '{}');
+  $('unit').value = state.unit || '';
+  $('focus').value = state.focus || '';
+  $('status-select').value = state.status || 'green';
+  $('notes').value = state.notes || '';
+
+  function refresh() {
+    const unit = $('unit').value.trim() || 'Current textbook section';
+    const focus = $('focus').value.trim() || 'today\'s concept';
+    $('today-title').textContent = focus;
+    $('today-summary').textContent = unit + ' · adaptive lesson prototype';
+    const body = encodeURIComponent('Generate today\'s French lesson.\n\nCurrent textbook position: ' + unit + '\nToday\'s focus: ' + focus + '\nClass status: ' + $('status-select').selectedOptions[0].text + '\n\nUse the classroom workflow in the repository manual. Produce opening, short quiz, review game, new-topic presentation/notes, listening comprehension, activity, and exit assignment.');
+    $('generate-link').href = 'https://github.com/hf7y/french-textbook/issues/new?title=' + encodeURIComponent('Generate lesson: ' + focus) + '&body=' + body;
+    const feedback = encodeURIComponent('Classroom evidence for: ' + focus + '\n\n' + ($('notes').value.trim() || 'Please record and interpret today\'s evidence.')); 
+    $('feedback-link').href = 'https://github.com/hf7y/french-textbook/issues/new?title=' + encodeURIComponent('Classroom evidence: ' + focus) + '&body=' + feedback;
+  }
+  $('save').addEventListener('click', () => {
+    localStorage.setItem('frenchTeacherState', JSON.stringify({unit:$('unit').value, focus:$('focus').value, status:$('status-select').value, notes:$('notes').value}));
+    refresh(); $('saved').textContent = 'Saved on this browser.';
+  });
+  $('save-notes').addEventListener('click', () => {
+    const old = JSON.parse(localStorage.getItem('frenchTeacherState') || '{}');
+    old.notes = $('notes').value; localStorage.setItem('frenchTeacherState', JSON.stringify(old));
+    refresh(); $('note-saved').textContent = 'Saved on this browser. Use “Send evidence to agent” when ready.';
+  });
+  $('unit').addEventListener('input', refresh); $('focus').addEventListener('input', refresh); $('status-select').addEventListener('change', refresh); $('notes').addEventListener('input', refresh);
+  refresh();
+</script>
+</body>
+</html>
