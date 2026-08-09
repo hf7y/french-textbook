@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Textbook reader
+    url: https://hf7y.github.io/french-textbook/
+    about: Review lessons already published from the normalized dataset.

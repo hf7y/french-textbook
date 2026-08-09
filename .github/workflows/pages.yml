@@ -24,9 +24,10 @@ jobs:
         run: |
           mkdir -p site
           cp index.html site/index.html
-          cp -r sections site/sections
+          cp -r assets site/assets
+          cp -r data site/data
           test -s site/index.html
-          test -d site/sections
+          test -f site/data/sections/index.json
 
       - name: Setup Pages
         uses: actions/configure-pages@v5

@@ -1,0 +1,37 @@
+name: Normalize an OCR lesson
+description: Create one reviewed Markdown lesson from one OCR source file.
+title: "Normalize: "
+labels: ["ocr-normalization"]
+body:
+  - type: input
+    id: source
+    attributes:
+      label: OCR source file
+      description: A single file under sections/.
+      placeholder: sections/01-adjectives.md
+    validations:
+      required: true
+  - type: input
+    id: output
+    attributes:
+      label: Normalized lesson file
+      description: The matching destination under data/sections/.
+      placeholder: data/sections/01-adjectives.md
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Known OCR problems or review notes
+      description: Record missing, illegible, or especially distorted passages.
+  - type: checkboxes
+    id: checklist
+    attributes:
+      label: Acceptance criteria
+      options:
+        - label: The OCR source remains unchanged.
+          required: true
+        - label: The lesson will have front matter and a matching index entry.
+          required: true
+        - label: Unresolved text will be marked for human review.
+          required: true
