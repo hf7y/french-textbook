@@ -86,7 +86,7 @@ However, this usage is currently undergoing change, and **des** is commonly used
 4. Adjectives of color that are nouns (orange, citron, crème, marron, etc.) do **not** agree with the nouns they modify.
    - des rideaux **crème**
 
-## C. Position of adjectives
+## 3. Position of adjectives
 
 1. Adjectives usually follow the nouns they modify, which is the opposite of English usage.
 
