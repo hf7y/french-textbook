@@ -61,7 +61,7 @@ Adjectives with a regular plural form add **-s** to the masculine or feminine si
 | un garçon français; un homme heureux | des garçons français; des hommes heureux |
 | une jeune fille française; une femme heureuse | de jeunes filles françaises; des femmes heureuses |
 
-2. Adjectives ending in **-u** in the masculine singular add **-x** to form the plural.
+2. Adjectives ending in **-eau** in the masculine singular add **-x** to form the plural.
 
 | Singular | Plural |
 | :---- | :---- |
