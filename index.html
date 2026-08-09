@@ -15,12 +15,16 @@
 
   <main class="reader">
     <nav aria-label="Lesson list">
+      <div class="source-toggle" role="group" aria-label="Content source">
+        <button id="btn-reviewed" class="source-btn active" aria-pressed="true">Reviewed</button>
+        <button id="btn-sections" class="source-btn" aria-pressed="false">OCR Sections</button>
+      </div>
       <label for="lesson-filter">Find a lesson</label>
       <input id="lesson-filter" type="search" placeholder="Search lessons">
       <ol id="lesson-list"></ol>
     </nav>
     <article id="lesson" aria-live="polite">
-      <p>Select a reviewed lesson from the list.</p>
+      <p>Select a lesson from the list.</p>
     </article>
   </main>
 
